@@ -63,3 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'ransack'
+gem 'devise'
+gem 'rails_admin', '~> 2.0.0.beta'
+gem 'cancancan'
+gem 'rails-i18n', '~> 5.1'
