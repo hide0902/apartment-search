@@ -1,0 +1,75 @@
+.main3
+  .main3__show
+    .main3__show__title
+      物件詳細
+    .main3__show__box
+      .main3__show__box__list
+        .main3__show__box__list__title
+          = @room.building.name
+        .main3__show__box__list__show
+          .main3__show__box__list__show__1
+            = @room.rent
+            万円
+          .main3__show__box__list__show__2
+            (共益費:
+            = @room.service
+            円)
+        .main3__show__box__list__show__3
+          敷金:
+          = @room.security
+          万円 / 礼金:
+          = @room.key
+          万円
+      .main3__show__box__font-box
+        .main3__show__box__font-box__font
+          = image_tag @room.building.image_top, class: 'main3__show__box__font-box__font__1'
+        .main3__show__box__font-box__show
+          .main3__show__box__font-box__show__1
+            = image_tag @room.building.image_top, class: 'main3__show__box__font-box__show__1__2'
+          .main3__show__box__font-box__show__1
+            = image_tag @room.image_plan, class: 'main3__show__box__font-box__show__1__2'
+          .main3__show__box__font-box__show__1
+            - @image.each do |image|
+              = image_tag image.image_sub, class: 'main3__show__box__font-box__show__1__2'
+      .main3__show__box__show-box
+        .main3__show__box__show-box__street
+          .main3__show__box__show-box__street__1
+            所在地
+          .main3__show__box__show-box__street__2
+            = @room.building.prefecture
+            = @room.building.city
+            = @room.building.street
+            = @room.building.number
+        .main3__show__box__show-box__station
+          .main3__show__box__show-box__station__1
+            駅徒歩
+          .main3__show__box__show-box__station__2
+            - @station.each do |station|
+              .main3__show__box__show-box__station__2__box
+                = station.route
+                = station.name
+                徒歩
+                = station.walk
+                分
+        .main3__show__box__show-box__plan
+          .main3__show__box__show-box__plan__1
+            間取り
+          .main3__show__box__show-box__plan__2
+            = @room.plan
+          .main3__show__box__show-box__plan__3
+            専有面積
+          .main3__show__box__show-box__plan__4
+            = @room.exclusive
+            ㎡
+        .main3__show__box__show-box__age
+          .main3__show__box__show-box__age__1
+            築年数
+          .main3__show__box__show-box__age__2
+            築
+            = @room.building.age
+            年
+          .main3__show__box__show-box__age__3
+            階
+          .main3__show__box__show-box__age__4
+            = @room.floor
+            階

@@ -1,0 +1,370 @@
+.main
+  .main__box
+    = search_form_for @search, url: searches_path, class: 'main__box__search' do |f|
+      %h1 大阪府 - 市区群を選択
+      .main__box__search__1
+        .main__box__search__1__title
+          大阪市
+        .main__box__search__1__box
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市都島区', nil
+              都島区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市福島区', nil
+              福島区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市此花区', nil
+              此花区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市西区', nil
+              西区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市港区', nil
+              港区
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市大正区', nil
+              大正区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市天王寺区', nil
+              天王寺区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市浪速区', nil
+              浪速区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市西淀川区', nil
+              西淀川区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市東淀川区', nil
+              東淀川区
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市東成区', nil
+              東成区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市生野区', nil
+              生野区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市旭区', nil
+              旭区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市城東区', nil
+              城東区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市阿倍野区', nil
+              阿倍野区
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市住吉区', nil
+              住吉区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市東住吉区', nil
+              東住吉区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市西成区', nil
+              西成区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市淀川区', nil
+              淀川区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市鶴見区', nil
+              鶴見区
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市住之江区', nil
+              住之江区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市平野区', nil
+              平野区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市北区', nil
+              北区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪市中央区', nil
+              中央区
+              
+      .main__box__search__1
+        .main__box__search__1__title
+          堺市
+        .main__box__search__1__box
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '堺市堺区', nil
+              堺区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '堺市北区', nil
+              北区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '堺市西区', nil
+              西区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '堺市中区', nil
+              中区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '堺市東区', nil
+              東区
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '堺市美原区', nil
+              美原区
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '堺市南区', nil
+              南区
+
+      .main__box__search__1
+        .main__box__search__1__title
+          その他の地域
+        .main__box__search__1__box
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '岸和田市', nil
+              岸和田市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '豊中市', nil
+              豊中市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '池田市', nil
+              池田市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '吹田市', nil
+              吹田市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '泉大津市', nil
+              泉大津市
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '高槻市', nil
+              高槻市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '貝塚市', nil
+              貝塚市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '守口市', nil
+              守口市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '枚方市', nil
+              枚方市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '茨木市', nil
+              茨木市
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '八尾市', nil
+              八尾市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '泉佐野市', nil
+              泉佐野市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '富田林市', nil
+              富田林市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '寝屋川市', nil
+              寝屋川市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '河内長野市', nil
+              河内長野市
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '松原市', nil
+              松原市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大東市', nil
+              大東市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '和泉市', nil
+              和泉市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '箕面市', nil
+              箕面市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '柏原市', nil
+              柏原市
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '羽曳野市', nil
+              羽曳野市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '門真市', nil
+              門真市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '摂津市', nil
+              摂津市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '高石市', nil
+              高石市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '藤井寺市', nil
+              藤井寺市
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '東大阪市', nil
+              東大阪市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '泉南市', nil
+              泉南市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '四條畷市', nil
+              四條畷市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '交野市', nil
+              交野市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '大阪狭山市', nil
+              大阪狭山市
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '阪南市', nil
+              阪南市
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '三島郡', nil
+              三島郡
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '豊能郡', nil
+              豊能郡
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '泉北郡', nil
+              泉北郡
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '泉南郡', nil
+              泉南郡
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '南河内郡', nil
+              南河内郡
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '泉南市', nil
+              泉南市
+      %h1 その他の条件を指定
+
+      .main__box__search__2
+        .main__box__search__2__title
+          賃料
+        .main__box__search__2__box
+          = f.select :rooms_rent_gteq, [ ["3万円以上",3], ["3.5万円以上",3.5], ["4万円以上",4], ["4.5万円以上",4.5], ["5万円以上",5], ["5.5万円以上",5.5], ["6万円以上",6], ["6.5万円以上",6.5], ["7万円以上",7], ["7.5万円以上",7.5], ["8万円以上",8], ["8.5万円以上",8.5], ["9万円以上",9], ["9.5万円以上",9.5], ["10万円以上",10], ["11万円以上",11], ["12万円以上",12], ["13万円以上",13], ["14万円以上",14], ["15万円以上",15], ["16万円以上",16], ["17万円以上",17], ["18万円以上",18], ["19万円以上",19], ["20万円以上",20], ["25万円以上",25], ["30万円以上",30], ["35万円以上",35], ["40万円以上",40], ["45万円以上",45], ["50万円以上",50], ["60万円以上",60], ["70万円以上",70], ["80万円以上",80], ["90万円以上",90], ["100万円以上",100] ], :include_blank => '指定なし'
+          %h1 ~
+          = f.select :rooms_rent_lteq, [ ["3万円以下",3], ["3.5万円以下",3.5], ["4万円以下",4], ["4.5万円以下",4.5], ["5万円以下",5], ["5.5万円以下",5.5], ["6万円以下",6], ["6.5万円以下",6.5], ["7万円以下",7], ["7.5万円以下",7.5], ["8万円以下",8], ["8.5万円以下",8.5], ["9万円以下",9], ["9.5万円以下",9.5], ["10万円以下",10], ["11万円以下",11], ["12万円以下",12], ["13万円以下",13], ["14万円以下",14], ["15万円以下",15], ["16万円以下",16], ["17万円以下",17], ["18万円以下",18], ["19万円以下",19], ["20万円以下",20], ["25万円以下",25], ["30万円以下",30], ["35万円以下",35], ["40万円以下",40], ["45万円以下",45], ["50万円以下",50], ["60万円以下",60], ["70万円以下",70], ["80万円以下",80], ["90万円以下",90], ["100万円以下",100] ], :include_blank => '指定なし'
+
+      .main__box__search__1
+        .main__box__search__1__title
+          駅徒歩
+        .main__box__search__1__box
+          .main__box__search__1__box__2
+            %label
+              = f.radio_button :age_lteq, '', {:checked => true}
+              指定なし
+            %label
+              = f.radio_button :age_lteq, 1
+              1分以内
+            %label
+              = f.radio_button :age_lteq, 3
+              3分以内
+            %label
+              = f.radio_button :age_lteq, 5
+              5分以内
+            %label
+              = f.radio_button :age_lteq, 7
+              7分以内
+          .main__box__search__1__box__2
+            %label
+              = f.radio_button :age_lteq, 10
+              10分以内
+            %label
+              = f.radio_button :age_lteq, 15
+              15分以内
+            %label
+              = f.radio_button :age_lteq, 20
+              20分以内
+    
+      .main__box__search__1
+        .main__box__search__1__title
+          間取り
+        .main__box__search__1__box
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              ワンルーム
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '2', nil
+              1K
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '3', nil
+              1DK
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '4', nil
+              1LDK
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '5', nil
+              2K
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '6', nil
+              2DK
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '7', nil
+              2LDK
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '8', nil
+              3K
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '9', nil
+              3DK
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '10', nil
+              3LDK
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '11', nil
+              4K
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '12', nil
+              4LDK
+            %label
+              = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '13', nil
+              5K以上
+            
+            
+      .main__box__search__5
+        .main__box__search__5__title
+          築年数
+        .main__box__search__5__box
+          = f.select :age_lteq, [ ["新築",0], ["1年以内",1], ["3年以内",3], ["5年以内",5], ["7年以内",7], ["10年以内",10], ["15年以内",15], ["20年以内",20], ["25年以内",25], ["30年以内",30] ], :include_blank => '指定なし'
+          
+      .main__box__search__1
+        .main__box__search__1__title
+          人気のこだわり条件
+        .main__box__search__1__box
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :rooms_bath_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              バス・トイレ別
+            %label
+              = f.check_box :parking_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              駐車場あり
+            %label
+              = f.check_box :rooms_washroom_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              室内洗濯置場
+            %label
+              = f.check_box :rooms_air_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              エアコン付き
+            %label
+              = f.check_box :pets_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              ペット相談可
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :lock_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              オートロック
+            %label
+              = f.check_box :rooms_washing_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              洗面所独立
+            %label
+              = f.check_box :net_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              ネット無料
+            %label
+              = f.check_box :bike_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              駐輪場あり
+            %label
+              = f.check_box :rooms_second_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              2階以上
+      .main__box__search__sub
+        = f.submit "この条件で検索", class: 'main__box__search__sub__button'
