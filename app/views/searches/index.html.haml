@@ -1,0 +1,60 @@
+.main2
+  .main2__title
+    検索結果
+  .main2__box
+    - @buildings.each do |building|
+      .main2__box__box2
+        .main2__box__box2__image-top
+          = image_tag building.image_top
+        .main2__box__box2__list
+          .main2__box__box2__list__title
+            = building.name
+          .main2__box__box2__list__show
+            .main2__box__box2__list__show__street
+              = building.prefecture
+              = building.city
+              = building.street
+              = building.number
+            .main2__box__box2__list__show__station-box
+              - building.stations .each do |station|
+                .main2__box__box2__list__show__station-box__station
+                  = station.route
+                  = station.name
+                  徒歩 
+                  = station.walk
+                  分
+            .main2__box__box2__list__show__age
+              築
+              = building.age
+              年
+          .main2__box__box2__list__room-box
+            - building.rooms.each do |room|
+              .main2__box__box2__list__room-box__show
+                .main2__box__box2__list__room-box__show__image
+                  = image_tag room.image_plan
+                .main2__box__box2__list__room-box__show__floor
+                  = room.floor
+                  階
+                .main2__box__box2__list__room-box__show__rent
+                  .main2__box__box2__list__room-box__show__rent__1
+                    = room.rent
+                    万円
+                  .main2__box__box2__list__room-box__show__rent__2
+                    (
+                    = room.service
+                    円)
+                .main2__box__box2__list__room-box__show__security
+                  敷金 
+                  = room.security
+                  万円
+                  %br
+                  礼金
+                  = room.key
+                  万円
+                .main2__box__box2__list__room-box__show__plan
+                  = room.plan
+                  %br
+                  = room.exclusive
+                  ㎡
+                .main2__box__box2__list__room-box__show__show-button
+                  = link_to '詳細を見る', "/searches/#{room.id}", method: :get  

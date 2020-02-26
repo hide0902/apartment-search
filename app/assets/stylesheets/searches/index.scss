@@ -1,0 +1,104 @@
+.main2 {
+  margin: auto;
+  background-image: image-url("7dd4eb91.jpg");
+  height: 100vh;
+  background-size:cover;
+  overflow: scroll;
+  &__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  &__box {
+    
+    &__box2 {
+      display: flex;
+      background-color:rgba(175, 168, 168, 0.8);
+      margin: auto;
+      width: 1100px;
+      margin-bottom: 20px;
+      padding: 15px;
+      &__image-top {
+        width: 150px;
+        img {
+          width: 150px;
+          height: auto;
+        }
+      }
+      &__list {
+
+        &__title {
+          font-size: 30px;
+          margin-left: 15px;
+        }
+        
+        &__show {
+            display: flex;
+            margin: 30px 15px;
+            font-size: 20px;
+          &__street {
+            
+            padding-right: 30px;
+          }
+          &__station-box {
+            padding-right: 30px;
+          }
+          &__age {
+          }
+        }
+        &__room-box {
+          // display: flex;
+          background-color:rgba(226, 217, 217, 0.9);
+          height: 150px;
+          width: 900px;
+          overflow: scroll;
+          
+          &__show {
+            display: flex;
+            font-size: 15px;
+            &__image {
+              height: 65px;
+              width: 150px;
+              margin: 10px;
+              text-align: center;
+              
+              img {
+                height: 65px;
+                width: auto;
+                
+              }
+  
+            }
+            &__floor {
+              padding: 30px;
+              width: 60px;
+            }
+            &__rent {
+              padding: 12px;
+              width: 120px;
+              &__1 {
+                color: red;
+                font-size: 25px;
+              }
+              &__2 {
+
+              }
+            }
+            &__security {
+              padding: 20px;
+              width: 120px;
+            }
+            &__plan {
+              padding: 20px;
+              width: 80px;
+            }
+            &__show-button {
+              padding: 30px;
+            
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
