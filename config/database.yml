@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: apartment-search_production
-  username: apartment-search
-  password: <%= ENV['APARTMENT-SEARCH_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
