@@ -7,7 +7,5 @@ require 'capistrano/rails/migrations'
 require 'capistrano3/unicorn'
 require "cappi"
 
-require "capistrano/scm/git"
-install_plugin Capistrano::SCM::Git
 
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
