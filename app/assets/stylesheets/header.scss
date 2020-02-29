@@ -1,0 +1,14 @@
+.header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(202, 190, 190, 0.356);
+  &__title {
+    font-size: 30px;
+    
+  }
+  &__user {
+    font-size: 30px;
+    display: flex;
+  }
+}
