@@ -1,3 +1,11 @@
 .main-user-show
-  - if current_user.admin?
-    = link_to "管理画面", admin_index_path
+  .main-user-show__box
+    %h1 マイページ
+    .main-user-show__box__menu-box
+      - if current_user.admin?
+        = link_to "管理画面", admin_index_path, class: "main-user-show__box__menu-box__menu"
+      = link_to "ユーザー情報編集", edit_user_registration_path(current_user), class: "main-user-show__box__menu-box__menu"
+    .main-user-show__box__like-box
+      %h2 お気に入り一覧
+      .main-user-show__box__like-box__like
+        

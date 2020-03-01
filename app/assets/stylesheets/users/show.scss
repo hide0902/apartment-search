@@ -2,4 +2,30 @@
   background-image: image-url("IMG_7087.jpeg");
   height: 100vh;
   background-size:cover;
+  overflow: scroll;
+  text-align: center;
+  &__box {
+    background-color:rgba(255,255,255,0.5);
+    margin: auto;
+    padding: 0 20px;
+    width: 1070px;
+    height: 100%;
+    h1 {
+      font-size: 40px;
+    }
+    &__menu-box {
+      text-align: right;
+      &__menu {
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        padding-right: 15px;
+      }
+    }
+    &__like-box {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
 }
