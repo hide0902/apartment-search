@@ -76,10 +76,16 @@ Things you may want to cover:
 - belongs_to :building, optional: true
 - has_many :images
 
-## imagesテーブール
+## imagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image_sub|string||
 |room_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :room, optional: true
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
