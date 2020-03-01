@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :areaseaches, only: [:index]
   resources :searches, only: [:index, :show]
   resources :admin, only: [:index]
+  resources :users, only: :show
 end
