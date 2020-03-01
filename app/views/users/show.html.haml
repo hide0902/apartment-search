@@ -1,1 +1,3 @@
-= link_to "管理画面", admin_index_path
+.main-user-show
+  - if current_user.admin?
+    = link_to "管理画面", admin_index_path

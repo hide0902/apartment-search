@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  color: white;
+  background-color: #272727;
+  &__box {
+    height: 90px;
+    width: 100%;
+    padding-top: 10px;
+    h1 {
+      font-size: 25px;
+    }
+    ul {
+      padding-top: 20px;
+      li {
+        padding-right: 35px;
+        display: inline-block;
+        
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+  &__sub {
+    height: 30px;
+    width: 100%;
+  }
+}

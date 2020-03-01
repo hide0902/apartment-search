@@ -1,11 +1,11 @@
 .header {
-  height: 90px;
+  height: 70px;
   width: 100%;
   background-color: rgb(75, 67, 67);
   &__box {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 10px;
     &__title-box {
       padding-left: 120px;
       &__title {
@@ -17,7 +17,7 @@
     &__user-box {
       display: flex;
       padding-right: 20px;
-      padding-top: 5px;
+      padding-top: 10px;
       &__user {
         font-size: 20px;
         text-decoration: none;
