@@ -1,8 +1,11 @@
 .header
-  .header__title
-    Apartment Search
-  .header__user
-    = link_to new_user_session_path, class: "header__user__login" do
-      %p ログイン
-    = link_to new_user_registration_path, class: "header__user__sing" do
-      %p 新規登録
+  .header__box
+    .header__box__title-box
+      = link_to "Apartment Search", root_path, class: "header__box__title-box__title"
+    .header__box__user-box
+      - if user_signed_in?
+        = link_to "マイページ", "/users/#{current_user.id}", class: "header__box__user-box__user"
+        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__box__user-box__user"
+      - else
+        = link_to "ログイン", new_user_session_path, class: "header__box__user-box__user"
+        = link_to "新規登録", new_user_registration_path, class: "header__box__user-box__user"

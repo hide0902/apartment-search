@@ -1,14 +1,29 @@
 .header {
   height: 90px;
   width: 100%;
-  display: flex;
-  background-color: rgba(202, 190, 190, 0.356);
-  &__title {
-    font-size: 30px;
-    
-  }
-  &__user {
-    font-size: 30px;
+  background-color: rgb(75, 67, 67);
+  &__box {
     display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    &__title-box {
+      padding-left: 120px;
+      &__title {
+        font-size: 35px;
+        text-decoration: none;
+        color: white;
+      }
+    }
+    &__user-box {
+      display: flex;
+      padding-right: 20px;
+      padding-top: 5px;
+      &__user {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding-right: 10px;
+      }
+    }
   }
 }
