@@ -7,10 +7,14 @@
     width: 100%;
     padding-top: 10px;
     h1 {
-      font-size: 25px;
+      font-size: 22px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
     ul {
-      padding-top: 20px;
+      padding-top: 15px;
       li {
         padding-right: 35px;
         display: inline-block;
@@ -23,7 +27,7 @@
     }
   }
   &__sub {
-    height: 30px;
+    height: 35px;
     width: 100%;
   }
 }
