@@ -1,10 +1,14 @@
 class LikesController < ApplicationController
-  def creste
-    @like = current_user.likes.create(room_id: params[:room_id])
+  
+  def create
+    @like = Like.create(room_id: current_user.id, room_id: params[:room_id])
+    @likes = current_user.likes
+    
   end
 
   def destroy
-    @like = Like.find_by(room_id: params[:room_id], user_id: current_user.id)
-    @like.destroy
+    @like = Like.find_by(user_id: current_user.id, room_id: params[:room_id])
+    like.destroy
+    
   end
 end
