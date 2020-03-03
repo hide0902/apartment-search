@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :tops, only: [:index]
   resources :routesearches, only: [:index]
   resources :areaseaches, only: [:index]
-  resources :searches, only: [:index, :show]
+  resources :searches, only: [:index, :show] do
+    resources :likes, only: [:create, :destroy]
+  end
   resources :admin, only: [:index]
   resources :users, only: :show
 end
