@@ -16,7 +16,7 @@
               = building.street
               = building.number
             .main2__box__box2__list__show__station-box
-              - building.stations .each do |station|
+              - building.stations.each do |station|
                 .main2__box__box2__list__show__station-box__station
                   = station.route
                   = station.name
@@ -57,4 +57,4 @@
                   = room.exclusive
                   ㎡
                 .main2__box__box2__list__room-box__show__show-button
-                  = link_to '詳細を見る', "/searches/#{room.id}", method: :get
+                  = link_to '詳細を見る', "/rooms/#{room.id}", method: :get

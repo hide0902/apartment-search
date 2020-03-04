@@ -1,11 +1,55 @@
-.main-user-show
-  .main-user-show__box
+.user-show
+  .user-show__box
     %h1 マイページ
-    .main-user-show__box__menu-box
+    .user-show__box__menu-box
       - if current_user.admin?
-        = link_to "管理画面", admin_index_path, class: "main-user-show__box__menu-box__menu"
-      = link_to "ユーザー情報編集", edit_user_registration_path(current_user), class: "main-user-show__box__menu-box__menu"
-    .main-user-show__box__like-box
+        = link_to "管理画面", admin_index_path, class: "user-show__box__menu-box__menu"
+      = link_to "ユーザー情報編集", edit_user_registration_path(current_user), class: "user-show__box__menu-box__menu"
+    .user-show__box__likes
       %h2 お気に入り一覧
-      .main-user-show__box__like-box__like
-        
+      .user-show__box__likes__like
+        - @user.liked_rooms.each do |room|
+          .user-show__box__likes__like__box
+            .user-show__box__likes__like__box__image
+              = image_tag room.building.image_top
+            .user-show__box__likes__like__box__show
+              .user-show__box__likes__like__box__show__name
+                = room.building.name
+              .user-show__box__likes__like__box__show__street
+                = room.building.prefecture
+                = room.building.city
+                = room.building.street
+                = room.building.number
+              .user-show__box__likes__like__box__show__station
+                = room.building.stations[0].route
+                = room.building.stations[0].name
+                徒歩 
+                = room.building.stations[0].walk
+                分
+              .user-show__box__likes__like__box__show__age
+                築
+                = room.building.age
+                年
+              .user-show__box__likes__like__box__show__room
+                .user-show__box__likes__like__box__show__room__rent-1
+                  = room.rent
+                  万円
+                .user-show__box__likes__like__box__show__rooms__rent-2
+                  (
+                  = room.service
+                  円)
+                .user-show__box__likes__like__box__show__rooms__security
+                  敷金 
+                  = room.security
+                  万円
+                  %br
+                  礼金
+                  = room.key
+                  万円
+                .user-show__box__likes__like__box__show__rooms__plan
+                  = room.plan
+                  %br
+                  = room.exclusive
+                  ㎡
+                .user-show__box__likes__like__box__show__rooms__show-button
+                  = link_to '詳細を見る', "/rooms/#{room.id}", method: :get

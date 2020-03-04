@@ -75,7 +75,7 @@
             階
         .main3__show__box__show-box__like
           - if user_signed_in?
-            - if @room.like_by?(current_user)
-              = link_to 'お気に入りを外す', search_like_path(@room), method: :delete
+            - if current_user.already_liked?(@room)
+              = button_to 'お気に入りを外す', room_like_path(@room), method: :delete
             - else
-              = link_to 'お気に入り', search_likes_path(@room), method: :post
+              = button_to 'お気に入り', room_likes_path(@room)
