@@ -75,6 +75,7 @@ Things you may want to cover:
 ### Association
 - belongs_to :building, optional: true
 - has_many :images
+- has_many :likes, dependent: :destroy
 
 ## imagesテーブル
 |Column|Type|Options|
@@ -89,3 +90,14 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
+### Association
+- has_many :likes, dependent: :destroy
+
+## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|room_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- belongs_to :room
