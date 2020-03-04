@@ -1,5 +1,5 @@
 class Like < ApplicationRecord
   belongs_to :user
   belongs_to :room
-  validates :user_id, :uniqueness => {:scope => :room_id}
+  validates_uniqueness_of :room_id, scope: :user_id
 end

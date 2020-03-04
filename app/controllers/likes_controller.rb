@@ -1,14 +1,14 @@
 class LikesController < ApplicationController
   
   def create
-    @like = Like.create(room_id: current_user.id, room_id: params[:room_id])
-    @likes = current_user.likes
     
+    @like = current_user.likes.create(room_id: params[:room_id])
+    redirect_back(fallback_location: root_path)
   end
 
   def destroy
-    @like = Like.find_by(user_id: current_user.id, room_id: params[:room_id])
-    like.destroy
-    
+    @like = Like.find_by(room_id: params[:room_id], user_id: current_user.id)
+    @like.destroy
+    redirect_back(fallback_location: root_path)
   end
 end

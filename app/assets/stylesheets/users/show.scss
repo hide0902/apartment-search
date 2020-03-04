@@ -1,4 +1,4 @@
-.main-user-show {
+.user-show {
   background-image: image-url("IMG_7087.jpeg");
   height: 100vh;
   background-size:cover;
@@ -22,9 +22,12 @@
         padding-right: 15px;
       }
     }
-    &__like-box {
+    &__likes {
       h2 {
         font-size: 25px;
+      }
+      &__like {
+        
       }
     }
   }
