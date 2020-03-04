@@ -17,6 +17,11 @@
         padding-left: 30px;
         &__title {
           font-size: 30px;
+          display: flex;
+          justify-content: space-between;
+          &__like {
+            margin-right: 30px;
+          }
         }
         &__show {
           display: flex;

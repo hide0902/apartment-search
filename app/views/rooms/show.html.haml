@@ -6,6 +6,11 @@
       .main3__show__box__list
         .main3__show__box__list__title
           = @room.building.name
+          - if user_signed_in?
+            - if current_user.already_liked?(@room)
+              = button_to 'お気に入りリストから外す', room_like_path(@room), method: :delete, class: "main3__show__box__list__title__like"
+            - else
+              = button_to 'お気に入りリストに追加', room_likes_path(@room), class: "main3__show__box__list__title__like"
         .main3__show__box__list__show
           .main3__show__box__list__show__1
             = @room.rent
@@ -73,9 +78,3 @@
           .main3__show__box__show-box__age__4
             = @room.floor
             階
-        .main3__show__box__show-box__like
-          - if user_signed_in?
-            - if current_user.already_liked?(@room)
-              = button_to 'お気に入りを外す', room_like_path(@room), method: :delete
-            - else
-              = button_to 'お気に入り', room_likes_path(@room)
