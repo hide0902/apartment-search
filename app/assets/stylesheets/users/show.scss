@@ -2,7 +2,7 @@
   background-image: image-url("IMG_7087.jpeg");
   height: 100vh;
   background-size:cover;
-  overflow: scroll;
+  
   text-align: center;
   &__box {
     background-color:rgba(255,255,255,0.5);
@@ -10,24 +10,83 @@
     padding: 0 20px;
     width: 1070px;
     height: 100%;
+    overflow: scroll;
     h1 {
       font-size: 40px;
     }
-    &__menu-box {
+    ul {
       text-align: right;
-      &__menu {
-        text-decoration: none;
+      li {
         display: inline-block;
-        color: black;
         padding-right: 15px;
+        a {
+          color: black;
+          text-decoration: none;
+          &:hover{
+            border-bottom: solid 1px black;
+          }
+        }
       }
     }
     &__likes {
+      
       h2 {
         font-size: 25px;
       }
       &__like {
         
+        &__box {
+          display: flex;
+          background-color:rgba(175, 168, 168, 0.8);
+          margin: auto;
+          width: 800px;
+          margin-bottom: 20px;
+          padding: 15px;
+          border-radius: 40px;
+          &__image {
+            width: 150px;
+            padding-right: 10px;
+            img {
+              width: 150px;
+              height: auto;
+              border-radius: 20px;
+            }
+          }
+          &__show {
+            &__name {
+              margin-bottom: 10px;
+              text-align: left;
+              font-size: 30px;
+            }
+            &__box {
+              margin-bottom: 10px;
+              display: flex;
+              
+              &__list {
+                padding-right: 23px;
+              }
+              
+            }
+            &__rooms {
+              display: flex;
+              
+              width: 620px;
+              background-color: white;
+              padding: 10px;
+              border-radius: 40px;
+              &__room {
+                padding: 10px 25px;
+                &__rent {
+                  color: red;
+                }
+              }
+              &__room1 {
+                padding: 20px 25px;
+                
+              }
+            }
+          }
+        }
       }
     }
   }
