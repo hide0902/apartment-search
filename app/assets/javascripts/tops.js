@@ -1,6 +1,6 @@
 $(function() {
   
-  $('.main-top__box__url-box').hide().slideDown(2000).animate(
+  $('.main-top__box__url-box').hide().slideDown(2100).animate(
     { opacity: 1 },
     { queue: false, duration: 500 }
   )
