@@ -9,6 +9,7 @@
     text-align: center;
     &__url-box {
       padding-top: 270px;
+      // opacity: 0;
       h1 {
         font-size: 50px;
         color: white;
@@ -24,6 +25,26 @@
         margin-right: 10px;
         font-size: 30px;
         color: white;
+          &:hover {
+            background-color: rgba(96, 99, 104, 0.8);
+          }
+        P {
+          margin-top: 27px;
+        }
+      }
+      &__2 {
+        border-radius: 40px;
+        width: 300px;
+        height: 100px;
+        background-color: rgba(48, 51, 56, 0.8);
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 30px;
+        color: white;
+          &:hover {
+            background-color: rgba(96, 99, 104, 0.8);
+          }
         P {
           margin-top: 27px;
         }

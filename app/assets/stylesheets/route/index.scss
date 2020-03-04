@@ -82,6 +82,9 @@
           cursor: pointer;
           font-size: 25px;
           margin-bottom: 40px;
+          &:hover {
+            background-color: #6dc1f1;
+          }
         }
       }
     }

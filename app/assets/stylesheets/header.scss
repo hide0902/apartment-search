@@ -12,17 +12,28 @@
         font-size: 30px;
         text-decoration: none;
         color: white;
+        &:hover{
+          border-bottom: solid 1px white;
+        }
       }
     }
     &__user-box {
-      display: flex;
       padding-right: 20px;
       padding-top: 10px;
-      &__user {
-        font-size: 15px;
-        text-decoration: none;
-        color: white;
-        padding-right: 15px;
+      ul {
+        li {
+          display: inline-block;
+          font-size: 15px;
+          padding-right: 15px;
+          
+          a {
+            color: white;
+            text-decoration: none;
+            &:hover{
+              border-bottom: solid 1px white;
+            }
+          } 
+        }
       }
     }
   }
