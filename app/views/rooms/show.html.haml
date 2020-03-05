@@ -37,44 +37,44 @@
             - @image.each do |image|
               = image_tag image.image_sub, class: 'main3__show__box__font-box__show__1__2'
       .main3__show__box__show-box
-        .main3__show__box__show-box__street
-          .main3__show__box__show-box__street__1
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
             所在地
-          .main3__show__box__show-box__street__2
+          .main3__show__box__show-box__shows__2
             = @room.building.prefecture
             = @room.building.city
             = @room.building.street
             = @room.building.number
-        .main3__show__box__show-box__station
-          .main3__show__box__show-box__station__1
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
             駅徒歩
-          .main3__show__box__show-box__station__2
+          .main3__show__box__show-box__shows__2
             - @station.each do |station|
-              .main3__show__box__show-box__station__2__box
+              .main3__show__box__show-box__shows__2__box
                 = station.route
                 = station.name
                 徒歩
                 = station.walk
                 分
-        .main3__show__box__show-box__plan
-          .main3__show__box__show-box__plan__1
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
             間取り
-          .main3__show__box__show-box__plan__2
+          .main3__show__box__show-box__shows__plan
             = @room.plan
-          .main3__show__box__show-box__plan__3
+          .main3__show__box__show-box__shows__exclusive
             専有面積
-          .main3__show__box__show-box__plan__4
+          .main3__show__box__show-box__shows__plan
             = @room.exclusive
             ㎡
-        .main3__show__box__show-box__age
-          .main3__show__box__show-box__age__1
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
             築年数
-          .main3__show__box__show-box__age__2
+          .main3__show__box__show-box__shows__plan
             築
             = @room.building.age
             年
-          .main3__show__box__show-box__age__3
+          .main3__show__box__show-box__shows__exclusive
             階
-          .main3__show__box__show-box__age__4
+          .main3__show__box__show-box__shows__plan
             = @room.floor
             階
