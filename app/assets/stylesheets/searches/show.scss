@@ -69,42 +69,48 @@
         margin-top: 20px;
         font-size: 20px;
         padding-bottom: 40px;
-        &__street {
+        &__shows {
           margin: auto;
           display: flex;
-          height: 60px;
           width: 600px;
           border:solid 1px black;
           &__1 {
-            padding-right: 30px;
             border-right:solid 1px black;
-            width: 120px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
           &__2 {
+            padding: 15px;
+            
+            &__box {
+              text-align: left;
+              
+            }
+          }
+          &__plan {
+            width: 115px;
+            padding: 15px;
             
           }
-        }
-        &__station {
-          margin: auto;
-          display: flex;
-          height: 60px;
-          width: 600px;
-          border:solid 1px black;
-          &__1 {
-            padding-right: 30px;
+          &__exclusive {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-right:solid 1px black;
-            width: 120px;
+            border-left:solid 1px black ;
+            width: 150px;
           }
-          &__2 {
-            
-          }
+          
         }
-        &__plan {
-          margin: auto;
-          display: flex;
-          height: 60px;
-          width: 600px;
-          border:solid 1px black;
+       
+          
+          &__2 {
+           
+          }
+        
+        
           &__1 {
             padding-right: 30px;
             border-right:solid 1px black;
@@ -122,13 +128,8 @@
           &__4 {
 
           }
-        }
-        &__age {
-          margin: auto;
-          display: flex;
-          height: 60px;
-          width: 600px;
-          border:solid 1px black;
+        
+        
           &__1 {
             padding-right: 30px;
             border-right:solid 1px black;
@@ -146,7 +147,7 @@
           &__4 {
 
           }
-        }
+        
       }
     }
   } 
