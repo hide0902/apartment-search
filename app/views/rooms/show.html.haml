@@ -87,3 +87,41 @@
             駐車場
           .main3__show__box__show-box__shows__plan
             = @room.building.parking
+      .main3__show__box__show-box
+        %h1 その他の設備
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
+            オートロック
+          .main3__show__box__show-box__shows__plan
+            = @room.building.lock
+          .main3__show__box__show-box__shows__exclusive
+            インターネット
+          .main3__show__box__show-box__shows__plan
+            = @room.building.net
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
+            ペット飼育
+          .main3__show__box__show-box__shows__plan
+            = @room.building.pets
+          .main3__show__box__show-box__shows__exclusive
+            駐輪場
+          .main3__show__box__show-box__shows__plan
+            = @room.building.bike
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
+            バストイレ
+          .main3__show__box__show-box__shows__plan
+            = @room.bath
+          .main3__show__box__show-box__shows__exclusive
+            洗濯置き場
+          .main3__show__box__show-box__shows__plan
+            = @room.washroom
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
+            洗面所
+          .main3__show__box__show-box__shows__plan
+            = @room.washing
+          .main3__show__box__show-box__shows__exclusive
+            エアコン
+          .main3__show__box__show-box__shows__plan
+            = @room.air
