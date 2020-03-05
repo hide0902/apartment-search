@@ -78,3 +78,12 @@
           .main3__show__box__show-box__shows__plan
             = @room.floor
             階
+        .main3__show__box__show-box__shows
+          .main3__show__box__show-box__shows__1
+            築年月
+          .main3__show__box__show-box__shows__plan
+            = @room.building.year
+          .main3__show__box__show-box__shows__exclusive
+            駐車場
+          .main3__show__box__show-box__shows__plan
+            = @room.building.parking
