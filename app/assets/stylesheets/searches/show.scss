@@ -67,9 +67,8 @@
         }
       }
       &__show-box {
-        margin-top: 20px;
         font-size: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         h1 {
           text-align: center;
         }
@@ -89,7 +88,7 @@
           }
           &__2 {
             width: calc(100% - 150px);
-            padding: 15px;
+            padding: 10px 15px;
             background-color: rgba(243, 232, 232, 0.8);
             &__box {
               text-align: left;
@@ -97,9 +96,9 @@
             }
           }
           &__plan {
-            width: 150px;
-            padding: 15px 0;
-            padding-left: 15px;
+            width: 165px;
+            padding: 5px 0;
+            text-align: center;
             background-color: rgba(243, 232, 232, 0.8);
             
           }
