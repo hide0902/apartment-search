@@ -26,7 +26,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $('#route3').text('OsakaMetro中央線⏬');
+          $(this).text('OsakaMetro中央線⏬');
       }
   });
   $('#route4').prevAll().hide();
@@ -37,6 +37,36 @@ $(function () {
       } else {
           $(this).prevAll().slideUp();
           $(this).text('OsakaMetro谷町線⏬');
+      }
+  });
+  $('#area1').prevAll().hide();
+  $('#area1').click(function () {
+      if ($(this).prevAll().is(':hidden')) {
+          $(this).prevAll().slideDown();
+          $(this).text('✖︎');
+      } else {
+          $(this).prevAll().slideUp();
+          $(this).text('大阪市⏬');
+      }
+  });
+  $('#area2').prevAll().hide();
+  $('#area2').click(function () {
+      if ($(this).prevAll().is(':hidden')) {
+          $(this).prevAll().slideDown();
+          $(this).text('✖︎');
+      } else {
+          $(this).prevAll().slideUp();
+          $(this).text('堺市⏬');
+      }
+  });
+  $('#area3').prevAll().hide();
+  $('#area3').click(function () {
+      if ($(this).prevAll().is(':hidden')) {
+          $(this).prevAll().slideDown();
+          $(this).text('✖︎');
+      } else {
+          $(this).prevAll().slideUp();
+          $(this).text('その他の地域⏬');
       }
   });
 });
