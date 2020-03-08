@@ -21,6 +21,7 @@
           &__title {
             width: 160px;
             font-size: 17px;
+            
           }
           &__box {
 
@@ -34,7 +35,12 @@
             }
           }
           &__button {
+            cursor: pointer;
             font-size: 20px;
+            height: 30px;
+            &:hover{
+              color: rgba(240, 233, 233, 0.6);
+            }
           }
         }
         

@@ -6,7 +6,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $(this).text('JR大阪環状線⏬');
+          $(this).text('JR大阪環状線⬇︎');
       }
   });
   $('#route2').prevAll().hide();
@@ -16,7 +16,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $(this).text('OsakaMetro御堂筋線(北大阪急行南北線)⏬');
+          $(this).text('OsakaMetro御堂筋線(北大阪急行南北線)⬇︎');
       }
   });
   $('#route3').prevAll().hide();
@@ -26,7 +26,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $(this).text('OsakaMetro中央線⏬');
+          $(this).text('OsakaMetro中央線⬇︎');
       }
   });
   $('#route4').prevAll().hide();
@@ -36,7 +36,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $(this).text('OsakaMetro谷町線⏬');
+          $(this).text('OsakaMetro谷町線⬇︎');
       }
   });
   $('#area1').prevAll().hide();
@@ -46,7 +46,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $(this).text('大阪市⏬');
+          $(this).text('大阪市⬇︎');
       }
   });
   $('#area2').prevAll().hide();
@@ -56,7 +56,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $(this).text('堺市⏬');
+          $(this).text('堺市⬇︎');
       }
   });
   $('#area3').prevAll().hide();
@@ -66,7 +66,7 @@ $(function () {
           $(this).text('✖︎');
       } else {
           $(this).prevAll().slideUp();
-          $(this).text('その他の地域⏬');
+          $(this).text('その他の地域⬇︎');
       }
   });
 });
