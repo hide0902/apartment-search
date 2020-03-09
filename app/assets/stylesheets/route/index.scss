@@ -32,6 +32,9 @@
                 width: 180px;
                 font-size: 17px;
                 cursor: pointer;
+                &:hover{
+                  color: rgba(240, 233, 233, 0.6);
+                }
               }
             }
           }
@@ -55,15 +58,18 @@
         }
         &__box {
           display: flex;
+          align-items: center;
           select {
             width: 150px;
             height: 40px;
             cursor: pointer;
+            &:hover{
+              color: rgba(131, 127, 127, 0.6);
+            }
           }
           h2 {
             margin: 0 10px;
             font-size: 30px;
-            padding: initial;
           }
         }
       }
@@ -80,6 +86,9 @@
             width: 150px;
             height: 40px;
             cursor: pointer;
+            &:hover{
+              color: rgba(131, 127, 127, 0.6);
+            }
           }
         }
       }
