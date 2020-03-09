@@ -95,7 +95,11 @@
             }
             &__show-button {
               padding: 30px;
-            
+              a {
+                &:hover{
+                  opacity: 0.5;
+                }
+              }
             }
           }
         }
