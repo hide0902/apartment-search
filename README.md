@@ -1,27 +1,28 @@
-# README
+# Apartment Search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## App URL
+http://52.198.193.160/
 
-Things you may want to cover:
+## 機能
+* 賃貸不動産の情報を見ることができる。(物件情報はサンプルですので、実際に募集は行っていません。)
+* ユーザー登録すると気に入った物件をお気に入りリストに追加できる。
+* 管理者権限を与えられているユーザーのみ物件情報の新規登録、編集、削除ができる。
 
-* Ruby version
+## 使い方
+1. ヘッダーにある新規登録から、ユーザー登録を行ってください。  ユーザー登録無しでも物件情報は観覧できますが、いいね機能が使用出来ません。  管理者権限なしのアカウント  メールアドレス:test@co.jp  パスワード:111111    管理者権限ありのアカウント  メールアドレス:admin@co.jp  パスワード:111111
+2. トップページ「駅から探す」、「エリアから探す」のどちらかを選びます。
+3. 検索画面に進み条件を打ちこんで検索ボタンをクリックします。
+4. 検索結果より気に入った部屋の「詳細を見る」をクリックします。
+5. 詳細画面に進むと、ユーザー登録がされていれば右上に「お気に入りリストに追加」ボタンが表示されています。
+6. ヘッダーにある「マイページ」を押すとお気に入りリストを観覧出来ます。
+7. 管理者権限が与えられているユーザーの場合、マイページに「管理画面」ボタンが追加されているので、そちらから物件登録等が行えます。
 
-* System dependencies
+## バージョン
+* Ruby 2.5.1
+* Rails 5.2.3
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Authors
+[Hideyuki Nagatani](/hide0902.md)
 
 ## apartment-searchのDB設計
 
