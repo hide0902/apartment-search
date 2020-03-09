@@ -29,7 +29,7 @@ http://52.198.193.160/
 * Rails 5.2.3
 
 ## Authors
-[Hideyuki Nagatani](/hide0902.md)
+[Hideyuki Nagatani](/hide0902)
 
 # apartment-searchのDB設計
 
