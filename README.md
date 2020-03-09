@@ -41,11 +41,13 @@ http://52.198.193.160/
 7. 管理者権限が与えられているユーザーの場合、マイページに「管理画面」ボタンが追加されているので、そちらから物件登録等が行えます。  
 
 ## バージョン
-* Ruby 2.5.1
-* Rails 5.2.3
+* Ruby 2.5.1  
+  
+* Rails 5.2.3  
+
 
 ## Authors
-[Hideyuki Nagatani](https://github.com/hide0902/apartment-search)
+[Hideyuki Nagatani](https://github.com/hide0902)
 
 # apartment-searchのDB設計
 
