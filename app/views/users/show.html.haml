@@ -3,7 +3,7 @@
     %h1 マイページ
     %ul
       - if current_user.admin?
-        %li= link_to "管理画面", admin_index_path, class: "user-show__box__menu-box__menu"
+        %li= link_to "サイト管理ページ", admin_index_path, class: "user-show__box__menu-box__menu"
       %li= link_to "ユーザー情報編集", edit_user_registration_path(current_user), class: "user-show__box__menu-box__menu"
     .user-show__box__likes
       %h2 お気に入り一覧
